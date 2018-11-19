@@ -7,8 +7,6 @@
 
 * [***代理相关***](#代理相关)
   * [ss-go.sh](#ss_gosh)
-  * [ssr.sh](#ssrsh)
-  * [ssrmu.sh](#ssrmush)
   * [brook.sh](#brooksh)
   * [goflyway.sh](#goflywaysh)
   * [daze.sh](#dazesh)
@@ -27,7 +25,6 @@
   * [pserver.sh](#pserversh)
 * [***服务器相关***](#服务器相关)
   * [bbr.sh](#bbrsh)
-  * [status.sh](#statussh)
   * [ban_iptables.sh](#ban_iptablessh)
   * [ssh_port.sh](#ssh_portsh)
 * [***VPN 相关***](#vpn相关)
@@ -41,9 +38,6 @@
   * [adbyby.sh](#adbybysh)
   * [gfw_push.sh](#gfw_pushsh)
   * [libsodium.sh](#libsodiumsh)
-  * [ssrstatus.sh](#ssrstatussh)
-  * [ssr_check.sh](#ssr_checksh)
-  * [ssr_ip_check.sh](#ssr_ip_checksh)
 
 ---
 
@@ -62,58 +56,7 @@
 #### 下载安装:
 ``` bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_backup/master/ss-go.sh && chmod +x ss-go.sh && bash ss-go.sh
-```
 
----
-## ssr.sh
-
-- 脚本说明: ShadowsocksR 一键安装管理脚本，支持单端口/多端口切换和管理
-- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
-- 使用方法: https://doub.io/ss-jc42/
-- 项目地址: https://github.com/P3TERX/shadowsocksr
-
-#### 脚本特点:
-目前网上的各个ShadowsocksR脚本基本都是只有 安装/启动/重启 等基础功能，对于小白来说还是不够简单方便。既然是一键脚本，那么就要尽可能地简单，小白更容易接受使用！
-
-- 支持 限制 用户速度
-- 支持 限制 端口设备数
-- 支持 显示 当前连接IP
-- 支持 显示 SS/SSR连接+二维码
-- 支持 切换管理 单/多端口
-- 支持 一键安装 锐速
-- 支持 一键安装 BBR
-- 支持 一键封禁 垃圾邮件(SMAP)/BT/PT
-
-#### 下载安装:
-``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_backup/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
-```
-
----
-## ssrmu.sh
-
-- 脚本说明: ShadowsocksR 一键安装管理脚本，支持流量控制
-- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
-- 使用方法: https://doub.io/ss-jc60/
-- 项目地址: https://github.com/P3TERX/shadowsocksr
-
-#### 脚本特点:
-目前网上的各个ShadowsocksR脚本基本都是只有 安装/启动/重启 等基础功能，对于小白来说还是不够简单方便。既然是一键脚本，那么就要尽可能地简单，小白更容易接受使用！
-
-- 支持 限制 用户速度
-- 支持 限制 用户设备数
-- 支持 限制 用户总流量
-- 支持 定时 流量清零
-- 支持 显示 当前连接IP
-- 支持 显示 SS/SSR连接+二维码
-- 支持 一键安装 锐速
-- 支持 一键安装 BBR
-- 支持 一键封禁 垃圾邮件(SMAP)/BT/PT
-
-#### 下载安装:
-``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_backup/master/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
-```
 
 ---
 ## brook.sh
@@ -307,18 +250,6 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_ba
 ```
 
 ---
-## status.sh
-
-- 脚本说明: ServerStatus 一键安装管理脚本
-- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
-- 使用方法: https://doub.io/shell-jc3/
-
-#### 下载安装:
-``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_backup/master/status.sh && chmod +x status.sh && bash status.sh
-```
-
----
 ## ban_iptables.sh
 
 - 脚本说明: iptables 垃圾邮件(SPAM)/BT/PT 一键封禁脚本
@@ -442,66 +373,6 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_ba
 #### 下载安装:
 ``` bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_backup/master/libsodium.sh && chmod +x libsodium.sh && bash libsodium.sh
-```
-
----
-## ssr_check.sh
-
-- 脚本说明: ShadowsocksR 批量快速验证账号可用性
-- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
-- 使用方法: https://doub.io/ss-jc56/
-
-#### 下载安装:
-``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_backup/master/ssr_check.sh && chmod +x ssr_check.sh
-```
-
----
-## ssrstatus.sh
-
-- 脚本说明: ShadowsocksR 账号在线监控网站
-- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
-- 使用方法: https://doub.io/shell-jc5/
-
-#### 下载安装:
-``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_backup/master/ssrstatus.sh && chmod +x ssrstatus.sh && bash ssrstatus
-```
-
----
-## ssr_ip_check.sh
-
-- 脚本说明: ShadowsocksR 检测每个端口链接IP数
-- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
-- 使用方法: https://doub.io/ss-jc50/
-
-#### 下载安装:
-``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_backup/master/ssr_ip_check.sh && chmod +x ssr_ip_check.sh
-```
-
----
-## ~~pipes.sh~~
-
-- 脚本说明: PipeSocks 一键安装管理脚本（该软件已停更）
-- 系统支持: CentOS7 / Debian7+ / Ubuntu14+
-- 使用方法: https://doub.io/pipesocks-jc2/
-
-#### 下载安装:
-``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/pipesocks/install/master/install.sh && mv install.sh pipes.sh && chmod +x pipes.sh && bash pipes.sh
-```
-
----
-## ~~gogo.sh~~
-
-- 脚本说明: GoGo Tunnel 一键安装管理脚本（该软件已停更）
-- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
-- 使用方法: https://doub.io/wlzy-24/
-
-#### 下载安装:
-``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_backup/master/gogo.sh && chmod +x gogo.sh && bash gogo.sh
 ```
 
 ---
