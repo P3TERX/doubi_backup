@@ -56,7 +56,7 @@
 #### 下载安装:
 ``` bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_backup/master/ss-go.sh && chmod +x ss-go.sh && bash ss-go.sh
-
+```
 
 ---
 ## brook.sh
@@ -316,12 +316,18 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_ba
 #### 下载安装:
 ``` bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_backup/master/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
- # 安装插件：
- bash caddy_install.sh xxx,xxx
-  # 例如同时安装 http.filemanager 和 http.webdav插件：
-  bash caddy_install.sh http.filemanager,http.webdav
-  # 插件和Caddy是集成在一起的(单个二进制文件)，多个插件必须同时安装。
-# 卸载命令：
+```
+#### 安装插件：
+```
+bash caddy_install.sh install xxx,xxx
+```
+例如同时安装 `http.filemanager` 和 `http.webdav` 插件：
+```
+bash caddy_install.sh install http.filemanager,http.webdav
+```
+插件和Caddy是集成在一起的(单个二进制文件)，多个插件必须同时安装。
+#### 卸载命令：
+```
 wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_backup/master/caddy_install.sh && chmod +x caddy_install.sh && caddy_install.sh uninstall
 ```
 
@@ -377,3 +383,5 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/P3TERX/doubi_ba
 
 ---
 Copyright (C) 2016-2018 Toyo <https://doub.io>
+
+Backup&Fix by [P3TERX](https://p3terx.com/) - 2018.11.20
